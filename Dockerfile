@@ -20,6 +20,7 @@ RUN make all -j8
 WORKDIR /app/
 
 RUN npm install
+# TODO: tag this image state as this will stay mostly static
 
 WORKDIR /app/
 # ENTRYPOINT ["/app/runner.sh"]
