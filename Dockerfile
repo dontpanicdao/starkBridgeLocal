@@ -12,15 +12,7 @@ RUN npm install -g --unsafe-perm ganache-cli@6.12.2
 COPY . /app/
 
 WORKDIR /app/
-RUN ./build.sh
-
-WORKDIR /app/build/Release
-RUN make all -j8
-
-WORKDIR /app/
 
 RUN npm install
-# TODO: tag this image state as this will stay mostly static
 
-WORKDIR /app/
 # ENTRYPOINT ["/app/runner.sh"]

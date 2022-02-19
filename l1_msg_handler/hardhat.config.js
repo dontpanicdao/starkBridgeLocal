@@ -2,8 +2,8 @@ require("@nomiclabs/hardhat-waffle");
 
 // This is a sample Hardhat task. To learn how to create your own go to
 // https://hardhat.org/guides/create-task.html
-const GOERLIURL = process.env.GOERLIURL;
-const PRIVKEY = process.env.PRIVKEY;
+// const GOERLIURL = process.env.GOERLIURL;
+// const PRIVKEY = process.env.PRIVKEY;
 
 /**
  * @type import('hardhat/config').HardhatUserConfig
@@ -19,13 +19,13 @@ module.exports = {
     }
   },
   networks: {
-    goerli: {
-      url: GOERLIURL,
-      accounts: [`${PRIVKEY}`],
-      gas: 5000000,
-      gasPrice: 25000000000, // 25 gwei
+    // goerli: {
+    //   url: GOERLIURL,
+    //   accounts: [`${PRIVKEY}`],
+    //   gas: 5000000,
+    //   gasPrice: 25000000000, 
       // gasPrice: 250000000000, // 250 gwei
-    }
+    // }
   },
   mocha: {
     timeout: 200000

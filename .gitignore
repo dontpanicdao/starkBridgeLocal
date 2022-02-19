@@ -1,5 +1,7 @@
 cairo-lang/
+artifacts/
 l1_msg_handler/artifacts
 l1_msg_handler/cache
 l1_msg_handler/node_modules
 *.log
+node.json
